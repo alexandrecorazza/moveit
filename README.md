@@ -20,7 +20,7 @@
 <p>
 
 ## :art: Layout
-O layout do projeto foi desenhado no [Figma](https://www.figma.com/) e pode ser visto através [clicando aqui](https://www.figma.com/file/5ac7L17dV1nWp9osnDr6eN/Move.it-2.0-(Copy)?node-id=160%3A2761).
+O layout do projeto foi desenhado no [Figma](https://www.figma.com/) e pode ser visto [clicando aqui](https://www.figma.com/file/5ac7L17dV1nWp9osnDr6eN/Move.it-2.0-(Copy)?node-id=160%3A2761).
 
 ## :bookmark: Sobre
 
