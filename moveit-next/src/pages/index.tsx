@@ -1,65 +1,63 @@
-import Head from "next/head"
+import styles from '../styles/components/LoginPage.module.css'
 
-import { GetServerSideProps } from 'next'
-import { CompletedChallenges } from "../components/CompletedChallenges"
-import { Countdown } from "../components/Countdown"
-import { ExperienceBar } from "../components/ExperienceBar"
-import { Profile } from "../components/Profile"
-import { ChallengeBox } from "../components/ChallengeBox"
-import styles from '../styles/pages/Home.module.css'
-import { CountdownProvider } from "../contexts/CountdownContext"
-import { ChallengesProvider } from '../contexts/ChallengesContext'
+import { GoMarkGithub } from 'react-icons/go'
+import { FiArrowRight } from 'react-icons/fi'
+import { useState } from 'react'
 
-interface HomeProps {
-  level: number
-  currentExperience: number
-  challengesCompleted: number
-}
+// This is the client ID and client secret that I obtained while registering the application
+const clientID = '7f49889ccabaa9274d88'
 
-export default function Home(props: HomeProps) {
-  console.log(props)
+function index() {
+
+  const [userName, setUserName] = useState('')
 
   return (
-    <ChallengesProvider
-      level={props.level}
-      currentExperience={props.currentExperience}
-      challengesCompleted={props.challengesCompleted}
-    >
-      <div className={styles.container}>
-        <Head>
-          <title>Início | move.it</title>
-           
-        </Head>
-        <ExperienceBar/>
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile/>
-              <CompletedChallenges/>
-              <Countdown/>
-            </div>
-            <div>
-              <ChallengeBox/>
-            </div>
-          </section>
-        </CountdownProvider>
+    <div id={styles.loginPage}>
+      <img src='./Simbolo.svg' alt="simbolo" />
+      <main className={styles.content}>
+        <img src='./logo.svg' alt="logo"/>
+        <p>Bem-vindo</p>
+        <div>
+           <GoMarkGithub size={36} color="#B2B9FF"/> {/* o body 32px setado no global.css não está pegando aqui. Por isso foi necessário setar o size para 36 */}
+          <span>Faça login com seu Github para começar</span>
+        </div>
+        <div>
+          <input type="text" placeholder="Digite seu username" onChange={event => setUserName(event.target.value)}/>
+          <a href={`https://github.com/login/oauth/authorize?client_id=${clientID}&login=${userName}`}>
+            {/* o parâmetro redirect_uri é opcional. Se não colocarmos, vai redirecionar para o link que
+            registramos no campo "Authorization callback URL" no Github */}
+            <FiArrowRight/>
+          </a>
+        </div>
+      </main>
+    </div>
+  );
+}
+
+export default index
+
+{/*<div className={styles.landingContainer}>
+  <div className={styles.simbolo}>
+    <img src={simbolo} alt="simbolo"/>
+  </div>
+
+  <div className={styles.loginWrapper}>
+    <img src={logo} alt="logo"/>
+
+    <main>
+      <p>Bem-vindo</p>
+
+      <div>
+        <GoMarkGithub color="#B2B9FF"/>  a props size está setada em size{36}
+        <span>Faça login com seu Github para começar</span>
       </div>
-    </ChallengesProvider>
-  )
-}
 
-//manipula quais dados são passados da camada do servidor Next(Node.js) para o cliente(front-end/React)
-//fazer chamada a API utilizando esse método getServerSideProps. A chamada a API ou consumo de qualquer outro serviço externo poderia ser feito dentro do componente normalmente, porém, não estaria disponível pelos motores de buscas como Google por exemplo, pq ele não aguarda a chamada terminar, pois essa chamada rodaria no browser. O Next não faz essa chamada antes de construir a interface. Se a chamada da API for feita por esse getServerSideProps, o Next vai primeiro fazer a chamada API para depois construir a interface 
-//tudo o que fizermos nesse método getServerSideProps vai executar do lado do servidor do Next.js e não do lado do browser  
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-
-  const { level, currentExperience, challengesCompleted } = ctx.req.cookies
-  //console.log(level, currentExperience, challengesCompleted) //ao colocarmos esse console.log, o log não aparecerá no navegador e sim no terminal, pois essa função executa do lado do servidor Next(Node.js)
-  return {
-    props: {
-      level: Number(level),
-      currentExperience: Number(currentExperience),
-      challengesCompleted: Number(challengesCompleted)
-    }
-  }
-}
+      <div className={styles.userName}>
+        <input type="text" placeholder="Digite seu nome" />
+        <a href="/">
+          <FiArrowRight/>
+        </a>
+      </div>
+    </main>
+  </div>
+</div>*/}

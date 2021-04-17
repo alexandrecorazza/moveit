@@ -1,0 +1,172 @@
+#loginPage {
+	width: 100vw;
+	height: 100vh;
+	background: var(--blue);
+	display: flex;
+}
+
+#loginPage > img {
+	height: 90vh;
+}
+
+.content {
+	max-width: 500px;
+	height: 100%;
+	width: 100%;
+	max-height: 400px;
+	margin: 6rem 0 0 7rem;
+}
+
+.content > img {
+	width: 300px;
+	margin-top: 2.5rem;
+}
+
+.content > p {
+	margin-top: 5rem;
+	font-weight: 500;
+	color: var(--white);
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.content > div {
+	margin-top: 1.7rem;
+}
+
+.content p + div {
+	display: flex;
+	align-items: center;
+}
+
+.content div + div {
+	display: flex;
+}
+
+.content div span {
+	width: 51%;
+	margin-left: 1.5rem;
+	font-weight: 400;
+	font-size: 20px;
+	color: var(--blue-light);
+}
+
+.content div input {
+	width: 67%;
+	height: 70px;
+	font-size: 1.2rem;
+	font-weight: 300;
+	color: var(--blue-light);
+	padding-left: 30px;
+	outline: none;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-style: none;
+	background: linear-gradient(to right, rgba(73, 83, 184, 1), rgba(73, 83, 184, 0.2));
+}
+
+.content input::-webkit-input-placeholder {
+	color: var(--blue-light);
+}
+
+.content div a {
+	width: 15%;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: var(--blue-dark);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.2s;
+	font-size: 32px;
+}
+
+.content a:hover {
+	background: var(--green);
+}
+
+.content a svg {	/* as propriedades de cores e tamanhos tbm poderiam ser alteradas mudando a props que é passada diretamente no compornente <FiArrowRight/>, assim como foi feito com o <GoMarkGithub> */
+	color: var(--white);
+	width: 30px;
+}
+
+/* .landingContainer {
+	width: 100vw;
+	height: 100vh;
+	background: #5965E0;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.simbolo {
+	width: 42rem;
+	height: 85%;
+}
+
+.simbolo img {
+	height: 100%;
+}
+
+.loginWrapper {
+	width: 42rem;
+	height: 85%;
+	padding-top: 6rem;
+}
+.loginWrapper main {
+	margin-top: 5rem;
+}
+
+.loginWrapper main div {
+	display: flex;
+	margin-top: 2.5rem;
+}
+
+.loginWrapper main div span {
+	width: 40%;
+	margin-left: 1.5rem;
+	font-weight: 400;
+	font-size: 20px;
+	color: var(--blue-light);
+}
+
+.loginWrapper input {
+	width: 50%;
+	height: 70px;
+	font-size: 1.2rem;
+	font-weight: 300;
+	color: var(--blue-light);
+	padding-left: 30px;
+	outline: none;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-style: none;
+	background: linear-gradient(to right, rgba(73, 83, 184, 1), rgba(73, 83, 184, 0.2));
+}
+
+.loginWrapper input::-webkit-input-placeholder {
+	color: var(--blue-light);
+}
+
+.userName a {
+	width: 10%;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #4953B8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.2s;
+}
+
+.userName a:hover {
+	background: #4CD62B;
+}
+
+.userName a svg {	as propriedades de cores e tamanhos tbm poderiam ser alteradas mudando a props que é passada diretamente no compornente <FiArrowRight/>, assim como foi feito com o <GoMarkGithub>
+	color: #FFFFFF;
+	width: 25px;
+}
+
+*/
