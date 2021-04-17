@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img alt="design do projeto" width="650px" src="./.github/moveit.gif.png" />
+  <img alt="design do projeto" width="650px" src="./.github/moveIt.gif" />
 <p>
 
 ## :bookmark: Sobre
