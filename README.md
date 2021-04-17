@@ -19,60 +19,45 @@
 
 ## :bookmark: Sobre
 
-O **Proffy** é uma aplicação Web desenvolvida para auxiliar na conexão entre alunos e professores, oferecendo aos professores a possibilidade de registrar na plataforma e dar aulas por um preço e horário definido pelo professor e aos alunos a possibilidade de buscar pelas disciplinas de interesse e agendar um horário de acordo com a disponibilidade do professor.
+O **MoveIt** é uma aplicação de incentivo a prática de exercícios aos usuários que passam muito tempo no computador. Utilizando a técnica Pomodoro, ao terminar o tempo definido pelo contador são ofericidos desafios que trabalham o corpo e a visão. Conforme o usuário completa os desafios, o mesmo ganha experiência e upa de level, deiando a prática dos exercícios mais divertida.
   
 Este projeto foi idealizado e desenvolvido pela [Rocketseat](https://rocketseat.com.br/).
 
 ## :rocket: Tecnologias
 
+- [NextJS](https://github.com/vercel/next.js/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
-- [Expo](https://expo.io/)
-- [Node](https://nodejs.org/en/)
-- [Express](https://expressjs.com/)
-- [SQLite3](https://www.sqlite.org/index.html)
-- [Knex](http://knexjs.org/)
+- [js-cookie](https://github.com/js-cookie/js-cookie)
+- [Github Oauth](https://docs.github.com/en/developers/apps/authorizing-oauth-apps)
+
 
 ## ⚙️ Configuração
 
 - ### **Pré-requisitos**
 
-  - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado no computador
+  - É **necessário** possuir uma conta cadastrada no Github
   - É **necessário** possuir o **[Git](https://git-scm.com/)** instalado e configurado no computador
   - É **necessário** ter o gerenciador de pacotes **[Yarn](https://yarnpkg.com/)** instalado ou o **[NPM](https://www.npmjs.com/)**.
-  - Por fim, é **essencial** ter o **[Expo](https://expo.io/)** instalado de forma global na máquina
 
-- ### Server (Back-end)
+- ### Executando
 
   ```bash
   # Abra um terminal e copie este repositório com o comando
-  $ git clone https://github.com/alexandrecorazza/proffy.git
+  $ git clone https://github.com/alexandrecorazza/moveit.git
   # ou use a opção de download.
 
   # Entre na pasta server 
-  $ cd proffy/server
+  $ cd moveit-next/
 
   # Instale as dependências
   $ yarn install
 
   # Rode o servidor
-  $ yarn start
+  $ yarn dev
   ```
 
 <br>
-
-- ### Web (Front-end)
-
-  ```bash
-  # Entre na pasta web com 
-  $ cd proffy/web
-
-  # Instale as dependências
-  $ yarn install
-
-  # Rode o aplicação
-  $ yarn start
-  ```
 
 ## :memo: Licença
 
