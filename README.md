@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Proffy" src=".github/logo.svg" height="100px" />
+    <img alt="MoveIt" src=".github/logo.svg" height="100px" />
 </h1>
 
 <p align="center">
@@ -58,6 +58,12 @@ Este projeto foi idealizado e desenvolvido pela [Rocketseat](https://rocketseat.
   ```
 
 <br>
+
+## :pushpin: To-Do
+
+- [x] Adicionar página de autenticação do usuário com Github
+- [ ] Implementar aplicação mobile
+- [ ] Criar sistema de hanking entre usuários
 
 ## :memo: Licença
 
