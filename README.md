@@ -7,16 +7,20 @@
   <img alt="GitHub" src="https://img.shields.io/github/license/alexandrecorazza/proffy?style=flat-square"> 
 </p>
 <p align="center">
+  <a href="#art-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#bookmark-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#%EF%B8%8F-configuração">Configuração do projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#pushpin-to-do">To-do</a>
+  <a href="#pushpin-to-do">To-do</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
 <p align="center">
   <img alt="design do projeto" width="650px" src="./.github/moveIt.gif" />
 <p>
+
+## :art: Layout
+O layout do projeto foi desenhado no [Figma](https://www.figma.com/) e pode ser visto através [clicando aqui](https://www.figma.com/file/5ac7L17dV1nWp9osnDr6eN/Move.it-2.0-(Copy)?node-id=160%3A2761).
 
 ## :bookmark: Sobre
 
