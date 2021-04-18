@@ -3,8 +3,8 @@
 </h1>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/alexandrecorazza/proffy?style=flat-square">
-  <img alt="GitHub" src="https://img.shields.io/github/license/alexandrecorazza/proffy?style=flat-square"> 
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/alexandrecorazza/moveit?style=flat-square">
+  <img alt="GitHub" src="https://img.shields.io/github/license/alexandrecorazza/moveit?style=flat-square"> 
 </p>
 <p align="center">
   <a href="#art-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
