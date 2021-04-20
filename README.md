@@ -41,6 +41,7 @@ Este projeto foi idealizado e desenvolvido pela [Rocketseat](https://rocketseat.
 
 - ### **Pré-requisitos**
 
+  - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado no computador
   - É **necessário** possuir uma conta cadastrada no Github
   - É **necessário** possuir o **[Git](https://git-scm.com/)** instalado e configurado no computador
   - É **necessário** ter o gerenciador de pacotes **[Yarn](https://yarnpkg.com/)** instalado ou o **[NPM](https://www.npmjs.com/)**.
